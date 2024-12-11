@@ -1,0 +1,25 @@
+import cv2 as cv
+import matplotlib.pyplot as plt
+img=cv.imread('D:\Python\photos&video_opeancv\cats.jpg')
+cv.imshow('Originak_image',img)
+gray_img=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
+cv.imshow('Gray_Image',gray_img)
+#1.GRAY IMAGE HISTOGRAM
+gray_hist=cv.calcHist([gray_img],[0],None,[256],[0,256])
+plt.figure()
+plt.title('Gray Image Histogram')
+plt.xlabel('Bins')
+plt.ylabel('Number of channels')
+plt.xlim([0,256])
+plt.plot(gray_hist)
+plt.show()
+#2.BGR IMAGE HISTOGRAM
+img_hist=cv.calcHist([img],[0],None,[256],[0,256])
+plt.figure()
+plt.title('Original Image Histogram')
+plt.xlabel('Bins')
+plt.ylabel('Number Of Channels')
+plt.xlim([0,256])
+plt.plot(img_hist)
+plt.show()
+cv.waitKey(0)
