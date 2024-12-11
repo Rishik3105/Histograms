@@ -121,6 +121,7 @@ The pixel distribution of the original image.
 👋 Hi, I’m **Nimmani Rishik**, an enthusiastic developer exploring **Computer Vision and Image Processing**. 🌍 This project reflects my interest in leveraging OpenCV for powerful image analysis. 
 
 **Let’s Connect!** 🚀
+
 📧 [Email](mailto:nimmanirishik@gmail.com)  
 🔗 [LinkedIn](https://linkedin.com/in/nimmani-rishik-66b632287)  
 📷 [Instagram](https://instagram.com/rishik_3142)  
